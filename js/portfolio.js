@@ -36,7 +36,7 @@ function ViewModel() {
         gif: null,
         details: 'An unofficial web app of estimated time of KMB bus arrival. Simplified for mobile users.',
         moredetails: 'Turned an official web app of estimated time of bus arrival into a simplified mobile version web app. Used Python to scrape bus data, load data to database handled by MySQL and set up the web server. Gained some back-end knowlegde.',
-        projectlink: 'nrator.pythonanywhere.com',
+        projectlink: 'http://nrator.pythonanywhere.com/',
         github: 'https://github.com/nrator/Estimated-Arrival-Times-KMB',
         skills: ['JavaScript','jQuery Mobile','Python', 'SQL'],
         lastupdated: '6 days ago'

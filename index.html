@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="front-end developer, front-end designer, Hong Kong, freelance" />
+  <meta name="googlebot" content="front-end developer, front-end designer, Hong Kong, freelance" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Jason Leung | Front-End Developer</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/711a8a98c0.js"></script>
+</head>
+
+<body>
+  <!-- Site Wrapper -->
+  <div class="site-wrapper">
+
+    <!-- Navbar -->
+    <nav class="inner">
+      <ul class="nav nav-inline nav-masthead" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#aboutme" role="tab">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#projects" role="tab">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#contact" role="tab">Contact</a>
+        </li>
+      </ul>
+    </nav><!-- End of Navbar -->
+
+    <!-- Tab Contents -->
+    <div class="tab-content inner">
+
+      <!-- About Me -->
+      <div class="tab-pane fade in active vertical-center" id="aboutme" role="tabpanel">
+        <div class="container-fluid">
+          <p class="title">Front-End Developer</p>
+          <p class="lead">I am Jason. I create responsive websites with <strong>compelling designs</strong>, optimized for mobile and desktop performance. When I'm not coding, there's a high chance that I am climbing.</p>
+          <hr>
+          <p class="text-xs-center">HTML · CSS · JavaScript · Bootstrap · Knockout.js</p>
+        </div>
+      </div><!-- End of About Me -->
+
+      <!-- Projects -->
+      <div class="tab-pane fade" id="projects" role="tabpanel">
+        <div class="card-columns" data-bind="foreach: projects">
+          <div class="card card-inverse">
+            <img class="card-img-top img-fluid" data-bind="attr: { src: imgsrc, alt: title }">
+            <div class="card-block">
+              <h5 class="card-title" data-bind="text: title"></h5>
+              <p class="card-text" data-bind="text: details"></p>
+              <p class="card-text"><small class="text-muted">Last updated <span data-bind="text: lastupdated"></small></p>
+            </div>
+          </div>
+        </div>
+      </div><!-- End of Projects -->
+
+      <!-- Contact -->
+      <div class="tab-pane fade vertical-center" id="contact" role="tabpanel">
+        <div class="container-fluid">
+          <p class="lead text-xs-center">Got a project in mind? Or just want a friendly chat?</p>
+          <p class="lead text-xs-center">Give me an email and I'll get back to you asap.</p>
+          <hr>
+          <p class="text-xs-center">Call: (+852) 6410-3054</p>
+          <p class="text-xs-center">Email: klleungjason@gmail.com</p>
+          <p class="text-xs-center">
+            <a href="mailto:klleungjason@gmail.com">
+              <i class="fa fa-envelope-square fa-3x"></i>&nbsp;&nbsp;<span class="sr-only">Email</span>
+            </a>
+            <a href="https://hk.linkedin.com/in/jason-kin-long-leung">
+              <i class="fa fa-linkedin-square fa-3x"></i>&nbsp;&nbsp;<span class="sr-only">Linkedin</span>
+            </a>
+            <a href="https://github.com/nrator">
+              <i class="fa fa-github-square fa-3x"></i>&nbsp;&nbsp;<span class="sr-only">GitHub</span>
+            </a>
+            <a href="https://www.facebook.com/long217">
+              <i class="fa fa-facebook-square fa-3x"></i>&nbsp;&nbsp;<span class="sr-only">Facebook</span>
+            </a>
+          </p>
+        </div>
+      </div><!-- End of Contact -->
+
+    </div><!-- End of Tab Contents -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="text-xs-center">Created by <a href="https://hk.linkedin.com/in/jason-kin-long-leung">Jason Leung</a></p>
+    </footer>
+
+  </div><!-- End of Site Wrapper -->
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type='text/javascript' src='js/knockout-3.4.1.js'></script>
+  <script src="js/portfolio.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+a {
+  color: #97cdfd;
+}
+a:hover {
+  color: #59b0fa;
+  text-decoration: none;
+}
+
+.nav-masthead {
+    margin: 0 auto;
+}
+
+.inner {
+  overflow: hidden;
+  padding: 0 1rem;
+}
+
+@media (min-width: 720px) {
+  .inner {
+    width: 720px;
+    margin: 0 auto;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+#aboutme,
+#contact,
+footer {
+  color: #fff;
+  text-shadow: 0 .1rem .1rem rgba(0,0,0,.5);
+}
+
+.site-wrapper {
+  background: #000 url('img/beachcave.jpg') center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+}
+
+/* Header */
+
+.nav-masthead {
+  padding: 2rem 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: bold;
+  color: rgba(255,255,255,.5);
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover {
+  border-bottom-color: rgba(255,255,255,.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.tab-content {
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+.tab-content::-webkit-scrollbar
+{
+	width: 0.5rem;
+	background-color: rgba(0,0,0,0.2);;
+	border-radius: 0.3rem;
+}
+.tab-content::-webkit-scrollbar-thumb
+{
+	background-color: rgba(151,205,253,0.4);
+	border-radius: 0.3rem;
+}
+
+.title {
+  font-size: 1.75rem;
+}
+@media (min-width: 375px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 500px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+.active.vertical-center {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+      column-count: 2;
+  }
+}
+
+.card-inverse {
+   background-color: rgba(51,51,51,0.8);
+   border-color: rgb(51,51,51);"
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  line-height: 100px; /* Vertically center the text there */
+}

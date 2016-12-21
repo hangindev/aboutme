@@ -51,7 +51,7 @@
       <!-- Projects -->
       <div class="tab-pane fade" id="projects" role="tabpanel">
         <div class="card-columns" data-bind="foreach: projects">
-          <div class="card card-inverse">
+          <div class="card card-inverse" data-bind="click: $parent.updateModal" data-toggle="modal" data-target="#Modal">
             <img class="card-img-top img-fluid" data-bind="attr: { src: imgsrc, alt: title }">
             <div class="card-block">
               <h5 class="card-title" data-bind="text: title"></h5>
@@ -61,6 +61,37 @@
           </div>
         </div>
       </div><!-- End of Projects -->
+
+      <!-- Modal -->
+      <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-bind="with: modal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <!-- ko if: gif --><img class="img-fluid" data-bind="attr: { src: gif, alt: title }"><!-- /ko -->
+              <!-- ko ifnot: gif--><img class="img-fluid" data-bind="attr: { src: imgsrc, alt: title }"><!-- /ko -->
+            </div>
+            <div class="modal-body">
+              <h5 class="modal-title" data-bind="text: title"></h5>
+              <ul class="list-inline skill" data-bind="foreach: { data: skills, as: 'skill' }">
+                <li class="list-inline-item text-muted" data-bind="text: skill"></li>
+              </ul>
+              <!-- ko if: moredetails --><p data-bind="text: moredetails"></p><!-- /ko -->
+              <!-- ko ifnot: moredetails --><p data-bind="text: details"></p><!-- /ko -->
+              <ul class="list-inline reflink">
+                <!-- ko if: projectlink -->
+                <li class="list-inline-item"><a data-bind="attr: { href: projectlink }">PROJECT LINK</a></li>
+                <!-- /ko -->
+                <!-- ko if: github -->
+                <li class="list-inline-item"><a data-bind="attr: { href: github }">GITHUB</a></li>
+                <!-- /ko -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Contact -->
       <div class="tab-pane fade vertical-center" id="contact" role="tabpanel">

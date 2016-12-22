@@ -1,7 +1,13 @@
+/* Global*/
 html,
 body {
   height: 100%;
   overflow: hidden;
+}
+
+body {
+  color: #fff;
+  text-shadow: 0 .1rem .1rem rgba(0,0,0,.5);
 }
 
 a {
@@ -12,8 +18,13 @@ a:hover {
   text-decoration: none;
 }
 
-.nav-masthead {
-    margin: 0 auto;
+/* Site Content*/
+.site-wrapper {
+  background: #000 url('../img/beachcave.jpg') center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
 }
 
 .inner {
@@ -31,22 +42,10 @@ a:hover {
   }
 }
 
-#aboutme,
-#contact,
-footer {
-  color: #fff;
-  text-shadow: 0 .1rem .1rem rgba(0,0,0,.5);
+/* Navbar */
+nav {
+  text-align: center;
 }
-
-.site-wrapper {
-  background: #000 url('../img/beachcave.jpg') center center no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%; /* For at least Firefox */
-  min-height: 100%;
-}
-
-/* Header */
 
 .nav-masthead {
   padding: 2rem 0;
@@ -72,8 +71,9 @@ footer {
   border-bottom-color: #fff;
 }
 
+/* Tab Content*/
 .tab-content {
-  height: calc(100vh - 200px);
+  height: calc(100% - 200px);
   overflow-y: auto;
 }
 
@@ -87,6 +87,12 @@ footer {
 {
 	background-color: rgba(151,205,253,0.4);
 	border-radius: 0.3rem;
+}
+
+.vertical-align {
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
 }
 
 .title {
@@ -103,12 +109,6 @@ footer {
   }
 }
 
-.active.vertical-center {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
 @media (min-width: 576px) {
   .card-columns {
       column-count: 2;
@@ -119,7 +119,6 @@ footer {
    background-color: rgba(51,51,51,0.8);
    border-color: rgb(51,51,51);"
 }
-
 .card-inverse:hover {
   cursor: pointer;
   cursor: hand;
@@ -129,10 +128,12 @@ footer {
 .reflink li {
   padding-right: 1.5rem;
 }
+
+/* Footer */
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 100px;
-  line-height: 100px; /* Vertically center the text there */
+  line-height: 100px;
 }

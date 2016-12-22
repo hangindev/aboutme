@@ -115,11 +115,15 @@ nav {
   }
 }
 
-.card-inverse {
+.card-primary {
+  background-color: rgba(2,117,216,0.8);
+}
+
+.card-project {
    background-color: rgba(51,51,51,0.8);
    border-color: rgb(51,51,51);"
 }
-.card-inverse:hover {
+.card-project:hover {
   cursor: pointer;
   cursor: hand;
 }

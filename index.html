@@ -46,8 +46,12 @@
 
       <!-- Projects -->
       <div class="tab-pane fade" id="projects" role="tabpanel">
-        <div class="card-columns" data-bind="foreach: projects">
-          <div class="card card-inverse" data-bind="click: $parent.updateModal" data-toggle="modal" data-target="#Modal">
+        <div class="card-columns">
+          <div class="card card-block card-inverse card-primary">
+            <p class="h5">I built this personal website with <cite>Bootstrap 4</cite>.</p>
+          </div>
+          <!-- ko foreach: projects -->
+          <div class="card card-inverse card-project" data-bind="click: $parent.updateModal" data-toggle="modal" data-target="#Modal">
             <img class="card-img-top img-fluid" data-bind="attr: { src: imgsrc, alt: title }">
             <div class="card-block">
               <h5 class="card-title" data-bind="text: title"></h5>
@@ -55,6 +59,7 @@
               <p class="card-text"><small class="text-muted">Last updated <span data-bind="text: lastupdated"></small></p>
             </div>
           </div>
+          <!-- /ko -->
         </div>
       </div><!-- End of Projects -->
 

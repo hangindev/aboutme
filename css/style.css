@@ -18,6 +18,10 @@ a:hover {
   text-decoration: none;
 }
 
+.img-fluid { {
+  width: 100%;
+}
+
 /* Site Content*/
 .site-wrapper {
   background: #000 url('../img/beachcave.jpg') center center no-repeat;

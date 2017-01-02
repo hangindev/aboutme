@@ -10,7 +10,7 @@ function ViewModel() {
     this.projects = ko.observableArray([
       {
         title: 'Startup Landing Page Template',
-        imgsrc: 'https://nrator.github.io/30-30/day2_Homepage/screenshot.png',
+        imgsrc: 'https://s28.postimg.org/y6qtb7uv1/screenshot.jpg',
         gif: null,
         details: 'A simple and clear homepage showing features of a startup.',
         moredetails: 'A simple and clear homepage showing features of a startup. Consisted of a sign up section, images, Youtube video, etc.',

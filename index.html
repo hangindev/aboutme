@@ -12,7 +12,6 @@
   <link href="mobileicon.png" rel="apple-touch-icon" sizes="180x180" />
   <link href="mobileicon.png" rel="icon" sizes="192x192" />
   <script src="https://use.fontawesome.com/711a8a98c0.js"></script>
-  <script type="text/javascript">$crisp=[];CRISP_WEBSITE_ID="568beb8d-4e98-4988-b0ae-c755d3eb6c52";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.im/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </head>
 
 <body>
@@ -40,10 +39,10 @@
       <!-- About Me -->
       <div class="tab-pane fade in active vertical-align" id="aboutme" role="tabpanel">
         <div class="container-fluid">
-          <p class="title">Front-End Developer</p>
-          <p class="lead">I create responsive websites with <strong>compelling designs</strong>, optimized for mobile and desktop performance. When I'm not coding, there's a high chance that I am climbing.</p>
+          <p class="title">Full-stack Web Developer</p>
+          <p class="lead">Use Vue.js, D3.js as well as ASP.NET C#, MySQL on daily basis. Love to play with ES6 (webpack, Babel), React.js, Node.js. Interested in Big Data and algorithms. Also a climbing enthusiast.</p>
           <hr>
-          <p class="text-xs-center">HTML · CSS · JavaScript · Bootstrap · Knockout.js</p>
+          <p class="text-xs-center">HTML · CSS · JavaScript(ES6) · Vue.js · React.js · Node.js · ASP.NET</p>
         </div>
       </div><!-- End of About Me -->
 
@@ -59,7 +58,9 @@
             <div class="card-block">
               <h5 class="card-title" data-bind="text: title"></h5>
               <p class="card-text" data-bind="text: details"></p>
+              <!-- ko if: lastupdated -->
               <p class="card-text"><small class="text-muted">Last updated <span data-bind="text: lastupdated"></small></p>
+              <!-- /ko -->
             </div>
           </div>
           <!-- /ko -->
@@ -86,10 +87,13 @@
               <!-- ko ifnot: moredetails --><p data-bind="text: details"></p><!-- /ko -->
               <ul class="list-inline reflink">
                 <!-- ko if: projectlink -->
-                <li class="list-inline-item"><a data-bind="attr: { href: projectlink }">PROJECT LINK</a></li>
+                <li class="list-inline-item"><a data-bind="attr: { href: projectlink, target: '_blank' }">PROJECT LINK</a></li>
                 <!-- /ko -->
                 <!-- ko if: github -->
-                <li class="list-inline-item"><a data-bind="attr: { href: github }">GITHUB</a></li>
+                <li class="list-inline-item"><a data-bind="attr: { href: github, target: '_blank' }">GITHUB</a></li>
+                <!-- /ko -->
+                <!-- ko if: courselink -->
+                <li class="list-inline-item"><a data-bind="attr: { href: courselink, target: '_blank' }">COURSE LINK</a></li>
                 <!-- /ko -->
               </ul>
             </div>
